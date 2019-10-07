@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Courses:</h1>
+            <table class="table table-dark">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Duration</th>
+                    <th scope="col">Fees</th>
+                </tr>
+                {{#each data}}
+                    <tr>
+                        <th>{{this.courseId}}</th>
+                        <th>{{this.courseName}}</th>
+                        <th>{{this.courseDuration}}</th>
+                        <th>{{this.courseFee}}</th>
+                    </tr>
+                {{/each}}
+            </table>
+        </div>
+    </div>
+</div>
